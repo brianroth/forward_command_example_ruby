@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?q=st.%2520paul&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 11 Dec 2014 16:31:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Source:
+      - back
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":13.63,"lat":46.73},"sys":{"type":3,"id":5931,"message":0.0299,"country":"Austria","sunrise":1418280021,"sunset":1418311045},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02n"}],"base":"cmc stations","main":{"temp":32.74,"pressure":1018,"temp_min":32,"temp_max":33.26,"humidity":94},"wind":{"speed":1.08,"deg":0},"snow":{"3h":0},"clouds":{"all":20},"dt":1418314834,"id":0,"name":"Ferndorf","cod":200}
+    http_version: 
+  recorded_at: Thu, 11 Dec 2014 16:31:27 GMT
+recorded_with: VCR 2.8.0

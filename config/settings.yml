@@ -1,0 +1,8 @@
+api:
+  url: http://api.openweathermap.org
+  path: /data/2.5/weather 
+session_timeout: 86400
+api_request:
+  units: imperial
+response:
+  error: We are sorry, but the message you sent is not valid. Please check your text and try it again.
