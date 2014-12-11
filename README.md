@@ -14,7 +14,7 @@ bundle install
 ## Test It
 
 ```
-bundle exec rspec spec/knowit_test.rb
+bundle exec rspec spec/weather_spec.rb
 ```
 
 ## Run It
